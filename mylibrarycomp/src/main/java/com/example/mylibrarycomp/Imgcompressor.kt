@@ -18,8 +18,10 @@ public class Imgcompressor {
 
     fun getCompressedImageFile(
         file: File,
-        mContext: Context?
+        mContext: Context?,quality:Int
     ): File? {
+        // quality will be 0-100
+
         return try {
             val o = BitmapFactory.Options()
             o.inJustDecodeBounds = true
@@ -81,9 +83,9 @@ public class Imgcompressor {
                 }
                 val outputStream = FileOutputStream(newFile)
                 if (getFileExt(file.name) == "png" || getFileExt(file.name) == "PNG") {
-                    selectedBitmap!!.compress(Bitmap.CompressFormat.PNG, 20, outputStream)
+                    selectedBitmap!!.compress(Bitmap.CompressFormat.PNG, quality, outputStream)
                 } else {
-                    selectedBitmap!!.compress(Bitmap.CompressFormat.JPEG, 20, outputStream)
+                    selectedBitmap!!.compress(Bitmap.CompressFormat.JPEG, quality, outputStream)
                 }
                 newFile
             } else {
