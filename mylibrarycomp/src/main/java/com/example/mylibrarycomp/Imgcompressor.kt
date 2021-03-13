@@ -10,9 +10,8 @@ import java.io.File
 import java.io.FileInputStream
 import java.io.FileOutputStream
 
-public class Imgcompressor {
-    // this library created by Vivek Bhanse
-    // 13-03-2021
+public object Imgcompressor {
+
     /**
      * Created on : March 13, 2021
      * Author     : Vivek Bhanse
