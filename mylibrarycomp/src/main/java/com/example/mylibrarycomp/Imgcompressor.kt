@@ -13,7 +13,12 @@ import java.io.FileOutputStream
 public class Imgcompressor {
     // this library created by Vivek Bhanse
     // 13-03-2021
-
+    /**
+     * Created on : March 13, 2021
+     * Author     : Vivek Bhanse
+     * Name       : vivek
+     * GitHub     : https://github.com/vivekbhanse30
+     */
 
 
     fun getCompressedImageFile(
