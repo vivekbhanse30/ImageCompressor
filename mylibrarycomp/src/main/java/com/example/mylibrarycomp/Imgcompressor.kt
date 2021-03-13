@@ -11,6 +11,11 @@ import java.io.FileInputStream
 import java.io.FileOutputStream
 
 public class Imgcompressor {
+    // this library created by Vivek Bhanse
+    // 13-03-2021
+
+
+
     fun getCompressedImageFile(
         file: File,
         mContext: Context?
