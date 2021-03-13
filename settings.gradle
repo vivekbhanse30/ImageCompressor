@@ -1,0 +1,3 @@
+include ':mylibrarycomp'
+include ':app'
+rootProject.name = "CustomCompressor"
